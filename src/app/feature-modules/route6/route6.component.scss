@@ -1,0 +1,9 @@
+#container {
+    overflow-y: scroll;
+    height: 85vh;
+    // margin-top: 5vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 5% 10%
+}

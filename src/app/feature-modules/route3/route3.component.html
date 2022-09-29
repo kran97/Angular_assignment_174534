@@ -1,0 +1,20 @@
+<div class="outer-container">
+  <div class="inner-container">
+    <app-count-timer
+    [timer]="timer"
+    [switchStatus]="switchStatus"
+    [reset]="reset"
+    (currentPauseTime)="pauseTime($event)"
+    ></app-count-timer>
+    <app-enter-timer
+      [currentPauseTime]="currentPauseTime"
+      (timerEmitter)="getTimer($event)"
+      (startStopSwitch)="onOffSwitch($event)"
+      (reset)="onReset()"
+    ></app-enter-timer>
+  </div>
+  <div class="inner-container-second">
+    <app-time-stamp [switchStatus]="switchStatus" [reset]="reset"></app-time-stamp>
+    <app-btn-counter [switchStatus]="switchStatus" [reset]="reset"></app-btn-counter>
+  </div>
+</div>

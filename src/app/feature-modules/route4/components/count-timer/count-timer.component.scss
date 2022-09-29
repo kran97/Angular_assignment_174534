@@ -1,0 +1,18 @@
+.feature-count-timer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid black;
+    margin: 15px 0 0 0;
+    padding: 61px 120px;
+}
+
+.time-counter {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+h4 {
+    margin: 0;
+}

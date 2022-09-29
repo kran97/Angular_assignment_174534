@@ -1,0 +1,44 @@
+.outer-most-box {
+    display: flex;
+    justify-content: center;
+}
+
+.outer-most-box1 {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin: 9px 18px;
+    border: 2px solid black;
+}
+
+.box1 {
+    height: 22px;
+    width: 295px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: rect;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rect {
+    from {height: 22px; width: 295px;}
+    to {height: 176px; width: 577px;}
+}
+
+.rotating-para {
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes text {
+   0% {transform: rotate(360deg)};
+}

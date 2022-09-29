@@ -1,0 +1,18 @@
+<main class="container">
+    <table>
+        <tr>
+            <th class="header" *ngFor="let heading of headers" (click)="sort(heading)">{{heading}}
+                <ng-container *ngIf="sortCount === 1 && heading === selectedHeader"><i class="fa fa-angle-up"></i></ng-container>
+                <ng-container *ngIf="sortCount === -1 && heading === selectedHeader"><i class="fa fa-angle-down"></i></ng-container>
+            </th>
+        </tr>
+        <tr *ngFor="let row of studentData">
+            <td>{{row.Name}}</td>
+            <td>{{row.Class}}</td>
+            <td>{{row.Section}}</td>
+            <td>{{row.Sub1}}</td>
+            <td>{{row.Sub2}}</td>
+            <td>{{row.Sub3}}</td>
+        </tr>
+    </table>
+</main>

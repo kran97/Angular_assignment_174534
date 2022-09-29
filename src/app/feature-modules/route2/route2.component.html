@@ -1,0 +1,19 @@
+<header class="header">
+    <a (click)="listView()"><i class="fa fa-bars"></i> List</a> | 
+    <a (click)="gridView()"><i class="fa fa-th-large"></i> Grid</a>
+    <form [formGroup]="filter">
+        <label>Price Filter: </label>
+        <select (click)="onSubmit(filter.value)" formControlName="price">
+            <option value="1">Low to high</option>
+            <option value="2">High to low</option>
+        </select>
+    </form>
+</header>
+<main [ngClass]="isGrid ? 'container-grid' : 'container-list'">
+    <ng-container *ngFor="let item of items; let i = index">
+        <div class="item-block">
+            <img src={{item.image}} alt={{i}}>
+            <p>Price: ${{item.price}}</p>
+        </div>
+    </ng-container>
+</main>

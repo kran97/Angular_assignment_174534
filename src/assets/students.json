@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "Rahul",
+    "Class": 4,
+    "Section": "D",
+    "Sub1": 45,
+    "Sub2": 54,
+    "Sub3": 67
+  },
+  {
+    "Name": "Arnav",
+    "Class": 2,
+    "Section": "A",
+    "Sub1": 67,
+    "Sub2": 34,
+    "Sub3": 76
+  },
+  {
+    "Name": "Aman",
+    "Class": 7,
+    "Section": "C",
+    "Sub1": 88,
+    "Sub2": 97,
+    "Sub3": 90
+  },
+  {
+    "Name": "David",
+    "Class": 5,
+    "Section": "B",
+    "Sub1": 43,
+    "Sub2": 79,
+    "Sub3": 59
+  },
+  {
+    "Name": "Saurabh",
+    "Class": 9,
+    "Section": "E",
+    "Sub1": 60,
+    "Sub2": 82,
+    "Sub3": 93
+  }
+]

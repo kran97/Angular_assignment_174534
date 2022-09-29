@@ -1,0 +1,32 @@
+.nav-bar {
+    display: flex;
+    padding: 0 20px;
+    background-color: #4285F4;
+    position: fixed;
+    top: 0;
+    height: 55px;
+    width: 100vw;
+}
+
+.main-content {
+    padding-top: 55px;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 18px 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+
+    &:hover {
+        background-color: honeydew;
+        color: #4285F4;
+    }
+
+    &.active {
+        background-color: white;
+        color: #4285F4;
+    }
+}

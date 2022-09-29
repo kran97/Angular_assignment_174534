@@ -1,0 +1,9 @@
+<h2>Assignment!!!</h2>
+<p appBasicHighlight>This is testing of basic directive.</p>
+<p appBetterHighlight [defaultColor]="'green'" [highlightColor]="'red'">This is testing of better directive.</p>
+
+<button (click)="switchBoolean()">Click Me to switch boolean!</button>
+<div *appUnless="boolValue">
+    <li>1</li>
+    <li>2</li>
+</div>

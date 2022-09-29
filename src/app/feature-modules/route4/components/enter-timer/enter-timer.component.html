@@ -1,0 +1,13 @@
+<div class="feature-enter-timer">
+    <form [formGroup]="myTimer">
+        <label>Enter timer limit </label>
+        <input formControlName="timer" (blur)="submitTimer(myTimer.value)" />
+    </form>
+    <div class="btn">
+        <button (click)="startStop()">Start/Pause</button>
+        <button (click)="onReset()">Reset</button>
+    </div>
+    <div *ngFor="let time of pauseTimes">
+        Paused at {{time}}
+    </div>
+</div>

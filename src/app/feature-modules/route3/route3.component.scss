@@ -1,0 +1,15 @@
+.outer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.inner-container-second {
+    display: grid;
+    grid-template-columns: auto auto;
+}
